@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+:root {
+    --orange: #FEA301;
+    --white: #F7F7F7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.quicksand-normal-font {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: var(--white);
+}
+
+
+/* common styles */
+
+
+/* nav styles */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 8.75rem;
+    gap: 2rem;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-text {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.menu-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-size: 1.25rem;
+    gap: 2rem;
+    font-weight: 600;
+}
+
+.menu-list a {
+    text-decoration: none;
+}
+
+.nav-home {
+    font-weight: 700;
+    color: var(--orange);
+}
+
+.nav-about {
+    color: #01ACFD;
+}
+
+.nav-facilities {
+    color: #05D4DF;
+}
+
+.nav-admission {
+    color: #5D58EF;
+}
+
+.contact-btn {
+    background-color: var(--orange);
+    color: #fff;
+    padding: 1rem 4rem;
+    border-radius: 12px;
+    font-weight: 500;
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+
+/* small screen designs */
+
+
+@media screen and (max-width: 576px) {
+
+    nav {
+        padding: 0.25rem 1rem;
+        border-bottom: 1px solid var(--orange);
+    }
+
+    .logo-text,
+    .menu-list,
+    .contact-container{
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+        font-size: 2rem;
+    }
+}
