@@ -3,6 +3,8 @@
 :root {
     --orange: #FEA301;
     --white: #F7F7F7;
+    --sky-blue: #01ACFD;
+    --black: #111111;
 }
 
 * {
@@ -17,14 +19,17 @@
     font-style: normal;
 }
 
+/* common styles */
+
 body {
     max-width: 1440px;
     margin: 0 auto;
     background-color: var(--white);
 }
 
-
-/* common styles */
+section {
+    margin-top: 60px;
+}
 
 
 /* nav styles */
@@ -33,7 +38,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.2rem 8.75rem;
+    padding: 1rem 0;
     gap: 2rem;
 }
 
@@ -73,7 +78,7 @@ nav {
 }
 
 .nav-about {
-    color: #01ACFD;
+    color: var(--sky-blue);
 }
 
 .nav-facilities {
@@ -96,13 +101,68 @@ nav {
 }
 
 
+/* banner section styles */
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.banner-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.banner-title .empowering {
+    color: var(--orange);
+}
+
+.banner-title .students {
+    color: var(--black);
+}
+
+.banner-title .vision {
+    color: var(--sky-blue);
+}
+
+.banner-desc {
+    font-size: 1.25rem;
+    color: var(--black);
+}
+
+.enroll-btn {
+    font-size: 1.25rem;
+    color: var(--white);
+    background-color: var(--black);
+    padding: 10px 48px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.banner-img img {
+    width: 100%;
+    color: white;
+}
+
 /* small screen designs */
 
 
 @media screen and (max-width: 576px) {
 
     nav {
-        padding: 0.25rem 1rem;
+        padding: 0.5rem 1rem;
         border-bottom: 1px solid var(--orange);
     }
 
@@ -115,5 +175,24 @@ nav {
     .hamburger-menu {
         display: block;
         font-size: 2rem;
+    }
+
+    .hero-section {
+        flex-direction: column-reverse;
+        gap: 16px;
+        font-size: 1rem;
+    }
+
+    .banner-content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .banner-title {
+        font-size: 2rem;
+    }
+
+    .banner-desc br {
+        display: none;
     }
 }
