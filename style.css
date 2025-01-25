@@ -27,13 +27,20 @@ body {
     background-color: var(--white);
 }
 
+nav {
+    padding: 1rem 8rem 0 8rem;
+}
+
+section {
+    padding: 0 8rem 0 8rem;
+}
+
 /* nav styles */
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
     gap: 2rem;
 }
 
@@ -100,7 +107,7 @@ nav {
 
 .hero-section {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 3rem;
 }
@@ -151,13 +158,107 @@ nav {
     color: white;
 }
 
+/* curriculum styles */
+
+.curriculum-section {
+    /*background-size: cover;*/
+    height: 100vh;
+    background-origin: border-box;
+    background: url("assets/bg.png");
+    /*background-size: auto;*/
+
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    /*margin-top: 60px;*/
+    /*margin-bottom: 80px;*/
+    padding-top: 60px;
+}
+
+.curriculum-cards {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    gap: 2rem;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.curriculum-card {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 34px;
+    padding: 55px 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
+}
+
+.curriculum-card:nth-child(1) {
+    background: linear-gradient(to bottom, #DEF5FF, white 40%);
+    border: 1px solid #DEF5FF;
+}
+
+.curriculum-card:nth-child(1) a {
+    font-weight: 700;
+    color: #64C8FF;
+}
+
+.curriculum-card:nth-child(2) {
+    background: linear-gradient(to bottom, #FFF4DC, white 40%);
+    border: 1px solid #FFF4DC;
+}
+
+.curriculum-card:nth-child(2) a {
+    font-weight: 700;
+    color: #F0AA00;
+}
+
+.curriculum-card:nth-child(3) {
+    background: linear-gradient(to bottom, #EEE1FF, white 40%);
+    border: 1px solid #FFF4DC;
+}
+
+.curriculum-card:nth-child(3) a {
+    font-weight: 700;
+    color: #8700FF;
+}
+
+
+.curriculum-card img {
+    width: 100%;
+}
+
+
+.curriculum-section .card-title {
+    font-size: 1.5rem;
+    color: var(--black);
+}
+
+.curriculum-section .card-desc {
+    font-size: 1rem;
+    color: #808080;
+}
+
+.curriculum-section .card-read-more-link a {
+    text-decoration: none;
+}
+
 /* small screen designs */
 
 
 @media screen and (max-width: 576px) {
 
-    nav {
+    nav, section {
         padding: 0.5rem 1rem;
+    }
+
+    nav {
         border-bottom: 1px solid var(--orange);
     }
 
