@@ -42,6 +42,16 @@ section {
     padding-top: 60px;
 }
 
+.primary-btn-black {
+    font-size: 1.25rem;
+    color: var(--white);
+    background-color: var(--black);
+    padding: 10px 50px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+}
+
 /* nav styles */
 
 nav {
@@ -148,16 +158,6 @@ nav {
 .banner-desc {
     font-size: 1.25rem;
     color: var(--black);
-}
-
-.enroll-btn {
-    font-size: 1.25rem;
-    color: var(--white);
-    background-color: var(--black);
-    padding: 10px 48px;
-    border-radius: 12px;
-    border: none;
-    cursor: pointer;
 }
 
 
@@ -268,9 +268,7 @@ nav {
 /* our stories designs */
 
 .our-stories-section {
-    background: url("assets/bg.png"), linear-gradient(to top, #DEF5FF, white 40%);
-    background-clip: border-box;
-    background-repeat: no-repeat;
+    background: url("assets/bg.png"), linear-gradient(to top, rgb(254, 163, 1, 0.3), white 50%);
 }
 
 .our-stories-cards {
@@ -329,6 +327,16 @@ nav {
     display: none;
 }
 
+.our-stories-card-img-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-date-container {
+    margin-top: -25px;
+    margin-left: 25px;
+}
+
 .our-stories-section .card-date {
     background-color: #3CD8E8;
     font-weight: 500;
@@ -336,9 +344,13 @@ nav {
     border-radius: 48px;
     padding: 15px 35px;
     border: none;
-    /*margin-top: -85px;*/
-    /*margin-left: 35px;*/
+}
 
+.our-stories-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
 }
 
 /* small screen designs */
@@ -392,6 +404,32 @@ nav {
     }
 
     .curriculum-btn-container {
+        display: none;
+    }
+
+    .our-stories-cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .our-stories-card:first-child {
+        grid-row: 1;
+    }
+
+    .our-stories-card:nth-child(n+1) .card-desc {
+        display: none;
+    }
+
+    .our-stories-card:first-child .card-title {
+        font-size: 1rem;
+        margin-top: 35px;
+    }
+
+    .our-stories-card:nth-child(n + 1) {
+        display: block;
+    }
+
+    .our-stories-card:nth-child(n + 7) {
         display: none;
     }
 }
