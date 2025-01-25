@@ -35,6 +35,13 @@ section {
     padding: 0 8rem 0 8rem;
 }
 
+.section-title {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 60px;
+}
+
 /* nav styles */
 
 nav {
@@ -162,21 +169,11 @@ nav {
 /* curriculum styles */
 
 .curriculum-section {
-    /*background-size: cover;*/
-    /*height: 100vh;*/
-    background-origin: border-box;
     background: url("assets/bg.png");
-    /*background-size: auto;*/
-
-}
-
-.section-title {
-    font-size: 3rem;
-    font-weight: 700;
-    text-align: center;
-    /*margin-top: 60px;*/
-    /*margin-bottom: 80px;*/
-    padding-top: 60px;
+    /*background-size: 120% 120%;*/
+    background-repeat: no-repeat;
+    /*background-position: top left;*/
+    /*background-color: #01ACFD;*/
 }
 
 .curriculum-cards {
@@ -253,7 +250,7 @@ nav {
     gap: 10px;
     justify-content: center;
     align-content: center;
-    margin-bottom: 60px;
+    padding-bottom: 60px;
 }
 
 .curriculum-btn {
@@ -265,6 +262,13 @@ nav {
     color: #fff;
     font-size: 1.5rem;
     font-weight: 900;
+}
+
+/* our stories designs */
+
+.our-stories-section {
+    background: url("assets/bg.png");
+    background-repeat: no-repeat;
 }
 
 /* small screen designs */
