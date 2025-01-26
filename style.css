@@ -175,6 +175,8 @@ nav {
     background-repeat: no-repeat;
     /*background-position: top left;*/
     /*background-color: #01ACFD;*/
+    /*margin-left: calc(50% - 50vw);*/
+    /*margin-right: calc(50% - 50vw);*/
 }
 
 .curriculum-cards {
@@ -268,7 +270,9 @@ nav {
 /* our stories designs */
 
 .our-stories-section {
-    background: url("assets/bg.png"), linear-gradient(to top, rgb(254, 163, 1, 0.3), white 50%);
+    background: url("assets/bg.png"), linear-gradient(to top, rgb(254, 163, 1, 0.3), rgb(255, 255, 255, 0.1) 50%);
+    /*margin-left: calc(50% - 50vw);*/
+    /*margin-right: calc(50% - 50vw);*/
 }
 
 .our-stories-cards {
@@ -353,6 +357,82 @@ nav {
     padding-bottom: 60px;
 }
 
+/* footer designs */
+
+.footer-content {
+    background-color: #01ACFD;
+    /*margin: 0 auto;*/
+    padding: 120px 225px 105px 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /*align-content: center;*/
+    gap: 100px;
+    color: #fff;
+}
+
+.footer-content .logo-container {
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.footer-content .logo-container img {
+    width: 82px;
+    height: 82px;
+    background-color: #fff;
+}
+
+.footer-content .logo-text {
+    font-size: 2.5rem;
+}
+
+.footer-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 400px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-content .footer-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.links-list {
+    list-style: none;
+}
+
+.links-list li {
+    margin-top: 20px;
+}
+
+.links-list a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.footer-social-media .footer-title {
+    margin-bottom: 20px;
+}
+
+marquee {
+    background-color: #8700FF;
+    height: 40px;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
 /* small screen designs */
 
 
@@ -366,7 +446,7 @@ nav {
         border-bottom: 1px solid var(--orange);
     }
 
-    .logo-text,
+    nav .logo-text,
     .menu-list,
     .contact-container {
         display: none;
@@ -431,5 +511,15 @@ nav {
 
     .our-stories-card:nth-child(n + 7) {
         display: none;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 40px;
+        padding: 50px 20px 50px 30px;
+    }
+
+    .footer-about {
+        max-width: 90%;
     }
 }
