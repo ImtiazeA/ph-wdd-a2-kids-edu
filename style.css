@@ -170,12 +170,7 @@ nav {
 
 .curriculum-section {
     background: url("assets/bg.png");
-    /*background-size: 120% 120%;*/
     background-repeat: no-repeat;
-    /*background-position: top left;*/
-    /*background-color: #01ACFD;*/
-    /*margin-left: calc(50% - 50vw);*/
-    /*margin-right: calc(50% - 50vw);*/
 }
 
 .curriculum-cards {
@@ -270,8 +265,6 @@ nav {
 
 .our-stories-section {
     background: url("assets/bg.png"), linear-gradient(to top, rgb(254, 163, 1, 0.3), rgb(255, 255, 255, 0.1) 50%);
-    /*margin-left: calc(50% - 50vw);*/
-    /*margin-right: calc(50% - 50vw);*/
 }
 
 .our-stories-cards {
@@ -499,10 +492,6 @@ marquee {
     }
 
     .our-stories-card:first-child {
-        grid-row: 1;
-    }
-
-    .our-stories-card:nth-child(n+1) .card-desc {
         display: none;
     }
 
@@ -511,11 +500,15 @@ marquee {
         margin-top: 35px;
     }
 
-    .our-stories-card:nth-child(n + 1) {
+    .our-stories-card:nth-child(n+1) .card-desc {
+        display: none;
+    }
+
+    .our-stories-card:nth-child(n + 2) {
         display: block;
     }
 
-    .our-stories-card:nth-child(n + 7) {
+    .our-stories-card:nth-child(n + 8) {
         display: none;
     }
 
