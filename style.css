@@ -160,7 +160,6 @@ nav {
     color: var(--black);
 }
 
-
 .banner-img img {
     width: 100%;
     display: block;
@@ -422,6 +421,8 @@ nav {
     margin-bottom: 20px;
 }
 
+/* marquee designs in footer */
+
 marquee {
     background-color: #8700FF;
     height: 40px;
@@ -444,6 +445,10 @@ marquee {
 
     nav {
         border-bottom: 1px solid var(--orange);
+    }
+
+    .section-title {
+        padding-top: 40px;
     }
 
     nav .logo-text,
@@ -480,7 +485,7 @@ marquee {
         flex-direction: column;
         gap: 1rem;
         margin-top: 40px;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
 
     .curriculum-btn-container {
@@ -490,6 +495,7 @@ marquee {
     .our-stories-cards {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
+        padding: 40px 0;
     }
 
     .our-stories-card:first-child {
@@ -511,6 +517,10 @@ marquee {
 
     .our-stories-card:nth-child(n + 7) {
         display: none;
+    }
+
+    .our-stories-btn-container {
+        padding-bottom: 40px;
     }
 
     .footer-content {
